@@ -23,3 +23,10 @@ Implementa una función init (inmutable), tal que, dado un array como entrada de
 ```js
 const init = (/* array */) => {}; // Implementation here.
 ```
+
+#### Last
+Implementa una función last (inmutable), tal que, dado un array como entrada devuelva el último elemento.
+
+```js
+const last = (/* array */) => {}; // Implementation here.
+```

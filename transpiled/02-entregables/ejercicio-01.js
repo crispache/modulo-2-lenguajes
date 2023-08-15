@@ -11,6 +11,7 @@ var tail = function (collection) {
 var init = function (collection) {
     return collection === null || collection === void 0 ? void 0 : collection.slice(0, collection.length - 1);
 };
+var last = function (collection) { return collection === null || collection === void 0 ? void 0 : collection[(collection === null || collection === void 0 ? void 0 : collection.length) - 1]; };
 var singersName = ['Beyoncé', 'Michael Jackson', 'Elvis Presley', 'Aretha Franklin', 'Whitney Houston'];
 var scores = [0, 3, 5, 7, 10];
 var arrayMixing = ['Cris', null, 22, null, 'Santi'];
@@ -37,3 +38,11 @@ var initScores = init(scores);
 console.log('init Scores -> ', initScores);
 var initMixingResult = init(arrayMixing);
 console.log('init Mixing result -> ', initMixingResult);
+console.log("");
+console.log("************** Example function last ********************* ");
+var lastSinger = last(singersName);
+console.log('Last Singer -> ', lastSinger);
+var lastScore = last(scores);
+console.log('Last Score -> ', lastScore);
+var lastMixingResult = last(arrayMixing);
+console.log('Last Mixing result -> ', lastMixingResult);

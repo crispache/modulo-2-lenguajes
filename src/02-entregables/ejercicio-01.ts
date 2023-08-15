@@ -15,6 +15,8 @@ const init = <T>(collection: T[]): T[] => {
     return collection?.slice(0, collection.length - 1)
 } 
 
+const last = <T>(collection: T[]): T => collection?.[collection?.length - 1];
+
 
 
 const singersName: Array<string> = ['Beyoncé', 'Michael Jackson', 'Elvis Presley', 'Aretha Franklin', 'Whitney Houston']
@@ -58,3 +60,16 @@ console.log('init Scores -> ', initScores);
 
 const initMixingResult = init(arrayMixing);
 console.log('init Mixing result -> ', initMixingResult);
+
+
+console.log("");
+console.log("************** Example function last ********************* ");
+
+const lastSinger = last<string>(singersName);
+console.log('Last Singer -> ', lastSinger);
+
+const lastScore = last<number>(scores);
+console.log('Last Score -> ', lastScore);
+
+const lastMixingResult = last(arrayMixing);
+console.log('Last Mixing result -> ', lastMixingResult);
