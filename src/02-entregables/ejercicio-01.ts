@@ -6,10 +6,15 @@ const head = <T>(collection: T[]): T => {
     return firstElement;
 }
 
-const tail = <T>(collection: T[]) => {
+const tail = <T>(collection: T[]): T[] => {
     const [ first, ...items] = collection;
     return items;
 }
+
+const init = <T>(collection: T[]): T[] => {
+    return collection?.slice(0, collection.length - 1)
+} 
+
 
 
 const singersName: Array<string> = ['Beyoncé', 'Michael Jackson', 'Elvis Presley', 'Aretha Franklin', 'Whitney Houston']
@@ -31,11 +36,25 @@ console.log('First Mixing result -> ', firstMixingResult)
 console.log("");
 console.log("************** Example function tail ********************* ");
 
-const singers = tail<string>(singersName)
-console.log('Singers -> ', singers)
+const singers = tail<string>(singersName);
+console.log('Rest Singers -> ', singers);
 
 const restScores = tail<number>(scores);
-console.log('Rest Scores -> ', restScores)
+console.log('Rest Scores -> ', restScores);
 
 const restMixingResult = tail(arrayMixing);
-console.log('Rest Mixing result -> ', restMixingResult)
+console.log('Rest Mixing result -> ', restMixingResult);
+
+
+
+console.log("");
+console.log("************** Example function init ********************* ");
+
+const initSingers = init<string>(singersName);
+console.log('init Singers -> ', initSingers);
+
+const initScores = init<number>(scores);
+console.log('init Scores -> ', initScores);
+
+const initMixingResult = init(arrayMixing);
+console.log('init Mixing result -> ', initMixingResult);
