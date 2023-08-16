@@ -1,6 +1,8 @@
 console.log("************** DELIVERABLE 01 *********************");
 console.log("");
 
+//* TODO: Tipar <T>(collection: T[]): T ya q se repite
+
 const head = <T>(collection: T[]): T => {
     const [ firstElement ] = collection;
     return firstElement;

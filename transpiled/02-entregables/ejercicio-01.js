@@ -1,5 +1,6 @@
 console.log("************** DELIVERABLE 01 *********************");
 console.log("");
+//* TODO: Tipar <T>(collection: T[]): T ya q se repite
 var head = function (collection) {
     var firstElement = collection[0];
     return firstElement;
