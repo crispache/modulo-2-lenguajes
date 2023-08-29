@@ -24,7 +24,7 @@ class SlothMachine {
     }
 
     private hasWon(): boolean {
-       if(this.randomsBoolean.length === 0) return false
+      /*  if(this.randomsBoolean.length === 0) return false */
        return this.randomsBoolean.every( (element) => element === true);
     }
 

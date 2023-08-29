@@ -19,8 +19,7 @@ var SlothMachine = /** @class */ (function () {
         }
     };
     SlothMachine.prototype.hasWon = function () {
-        if (this.randomsBoolean.length === 0)
-            return false;
+        /*  if(this.randomsBoolean.length === 0) return false */
         return this.randomsBoolean.every(function (element) { return element === true; });
     };
     SlothMachine.prototype.generateRandomBoolean = function (max) {
