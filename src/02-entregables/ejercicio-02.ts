@@ -1,30 +1,22 @@
 console.log("************** DELIVERABLE 02 *********************");
-console.log("");
-
-
-console.log("************** Example function concatBase (a, b) *********************");
-const concatBase = <T>(a: T[], b: T[]): T[] => {
-    /* if (a && b) {
-        return [...a, ...b]
-    }  else if (a && !b || !a && b) {
-        return a ? [...a] : [...b]
-    } else {
-        return []
-    } */
-    return a && b ? [...a, ...b] : a ? [...a] : b ? [...b] : [];
-};
-
 
 const femaleSingers: Array<string> = ['Beyoncé', 'Aretha Franklin', 'Whitney Houston', 'Tina Turner']
 const maleSingers: Array<string> = ['Michael Jackson', 'Elvis Presley', 'Freddie Mercury']
+console.log("**** Array 1 ****" , femaleSingers)
+console.log("**** Array 2 ****", maleSingers)
+console.log("");
 
+
+console.log("************** Example function concat Arrays (a, b) *********************");
+const concatBase = <T>(a: T[], b: T[]): T[] => {
+    return a && b ? [...a, ...b] : a ? [...a] : b ? [...b] : [];
+};
 const bestSingers = concatBase<string>(femaleSingers, maleSingers);
-console.log('Resultado concatBase -> ', bestSingers)
+console.log('Concat (a, b) -> ', bestSingers)
 
 
 console.log("");
-console.log("************** Example function concatMultipleArrays (a, b, ...) *********************");
-
+console.log("************** Example function concat multiple Arrays (a, b, ...) *********************");
 
 const concatMultipleArrays = <T>(...someArrays: T[][]): T[] => {
     let result: T[] = [];
@@ -38,4 +30,4 @@ const concatMultipleArrays = <T>(...someArrays: T[][]): T[] => {
 
 
 const multipleArrays = concatMultipleArrays<string>(femaleSingers, maleSingers, ['Rihanna'], ['Lenny Kravitz'], undefined, null);
-console.log('Resultado concatMultipleArrays -> ', multipleArrays)
+console.log('Concat Multiple -> ', multipleArrays)
