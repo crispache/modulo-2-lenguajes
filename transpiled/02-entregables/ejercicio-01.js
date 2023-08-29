@@ -1,12 +1,11 @@
 console.log("************** DELIVERABLE 01 *********************");
 console.log("");
-//* TODO: Tipar <T>(collection: T[]): T ya q se repite
 var head = function (collection) {
     var firstElement = collection[0];
     return firstElement;
 };
 var tail = function (collection) {
-    var first = collection[0], items = collection.slice(1);
+    var items = collection.slice(1);
     return items;
 };
 var init = function (collection) {
@@ -16,34 +15,38 @@ var last = function (collection) { return collection === null || collection === 
 var singersName = ['Beyoncé', 'Michael Jackson', 'Elvis Presley', 'Aretha Franklin', 'Whitney Houston'];
 var scores = [0, 3, 5, 7, 10];
 var arrayMixing = ['Cris', null, 22, null, 'Santi'];
+console.log("**** Array 1 ****", singersName);
+console.log("**** Array 2 ****", scores);
+console.log("**** Array 3 ****", arrayMixing);
+console.log("");
 console.log("************** Example function head *********************");
 var firstSinger = head(singersName);
-console.log('First singer -> ', firstSinger);
+console.log('Array 1 (Head) -> ', firstSinger);
 var firstScore = head(scores);
-console.log('First score -> ', firstScore);
+console.log('Array 2 (Head) -> ', firstScore);
 var firstMixingResult = head(arrayMixing);
-console.log('First Mixing result -> ', firstMixingResult);
+console.log('Array 3 (Head) -> ', firstMixingResult);
 console.log("");
 console.log("************** Example function tail ********************* ");
 var singers = tail(singersName);
-console.log('Rest Singers -> ', singers);
+console.log('Array 1 (Tail) -> ', singers);
 var restScores = tail(scores);
-console.log('Rest Scores -> ', restScores);
+console.log('Array 2 (Tail) -> ', restScores);
 var restMixingResult = tail(arrayMixing);
-console.log('Rest Mixing result -> ', restMixingResult);
+console.log('Array 3 (Tail) -> ', restMixingResult);
 console.log("");
 console.log("************** Example function init ********************* ");
 var initSingers = init(singersName);
-console.log('init Singers -> ', initSingers);
+console.log('Array 1 (Init) -> ', initSingers);
 var initScores = init(scores);
-console.log('init Scores -> ', initScores);
+console.log('Array 2 (Init) -> ', initScores);
 var initMixingResult = init(arrayMixing);
-console.log('init Mixing result -> ', initMixingResult);
+console.log('Array 3 (Init) -> ', initMixingResult);
 console.log("");
 console.log("************** Example function last ********************* ");
 var lastSinger = last(singersName);
-console.log('Last Singer -> ', lastSinger);
+console.log('Array 1 (Last) -> ', lastSinger);
 var lastScore = last(scores);
-console.log('Last Score -> ', lastScore);
+console.log('Array 2 (Last) -> ', lastScore);
 var lastMixingResult = last(arrayMixing);
-console.log('Last Mixing result -> ', lastMixingResult);
+console.log('Array 3 (Last) -> ', lastMixingResult);
