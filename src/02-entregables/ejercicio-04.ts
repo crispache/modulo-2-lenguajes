@@ -5,7 +5,7 @@ interface Book {
     isRead: boolean;
 }
 
-const books = [
+const books: Book[] = [
     { title: "Harry Potter y la piedra filosofal", isRead: true },
     { title: "Canción de hielo y fuego", isRead: false },
     { title: "Devastación", isRead: true },
